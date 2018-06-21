@@ -1,0 +1,18 @@
+<div>
+<input type = "text"  #name>
+<button type="button" class="btn btn-success" click= "addDetail(name.value)">Add Button</button>
+</div>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+      </tr>
+      <tr *ngFor="let detail of details">
+        <td>{{detail.id}} </td>
+        <td>{{detail.name}} </td>
+      </tr>
+    </thead>
+  </table>
+</div>
